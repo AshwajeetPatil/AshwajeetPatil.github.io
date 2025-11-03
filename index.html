@@ -1,192 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashwajeet Patil | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #6e8efb, #a777e5);
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #6e8efb;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-    .about p {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .project-card {
-      background: #f9f9ff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      border: 1px solid #e0e0ff;
-      transition: transform 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .project-card h3 {
-      color: #5a67d8;
-      margin-bottom: 0.5rem;
-    }
-    .project-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-    .project-card a {
-      color: #6e8efb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .project-card a:hover {
-      text-decoration: underline;
-    }
-    .social-links {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .social-links a {
-      margin: 0 1rem;
-      color: #6e8efb;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #333;
-      color: white;
-      margin-top: 3rem;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
-      header { padding: 3rem 1rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwajeet Patil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
+    <header>
+        <h1>Ashwajeet Patil</h1>
+        <p>Vibe Coder</p> <!-- Customize tagline -->
+    </header>
 
-  <header>
-    <h1>Ashwajeet Patil</h1>
-    <p>Full-Stack Developer | App & Web Enthusiast | Lifelong Learner</p>
-  </header>
-
-  <div class="container">
-
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Ashwajeet, a passionate developer who loves building apps, websites, and tools that make life easier.</p>
-      <p>I work with HTML, CSS, JavaScript, Python, React, Node.js, and more. I enjoy turning ideas into reality through code.</p>
-      <p>Currently learning <strong>AI & Cloud</strong> and building cool side projects.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ashwajeet Patil, I .</p>
+        <h3>Education Qualifications</h3>
+        <ul>
+            <li>Master in Computer Applications(dropped out in second year)[2024]<li>
+            <li>Bachelor's in Computer Applications[2023]</li>
+            <li>HSC[2020]</li>
+            <li>SSC[2018]</li>
+            <!-- Add more as needed -->
+        </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-          <h3>Todo App</h3>
-          <p>A clean and responsive task manager built with React and localStorage.</p>
-          <p><a href="https://github.com/AshwajeetPatil/todo-app" target="_blank">View on GitHub</a></p>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <h3>Weather Dashboard</h3>
-          <p>Real-time weather app using OpenWeather API and vanilla JavaScript.</p>
-          <p><a href="https://github.com/AshwajeetPatil/weather-app" target="_blank">View on GitHub</a></p>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <h3>Personal Blog</h3>
-          <p>A static blog built with HTML/CSS and hosted on GitHub Pages.</p>
-          <p><a href="https://ashwajeetpatil.github.io/blog" target="_blank">Live Demo</a></p>
-        </div>
-
-        <!-- Add more projects below -->
-        <div class="project-card">
-          <h3>Coming Soon...</h3>
-          <p>Working on an AI-powered note-taking app with voice input.</p>
-          <p><em>Stay tuned!</em></p>
-        </div>
-
-      </div>
+    <section id="tools">
+        <h2>Apps & Tools I Use</h2>
+        <ul>
+            <li>Da Vinci Resolve</li>
+            <li>VS Code/Android Studio</li>
+            <li>FL studio</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+            <li>Rekordbox</li>
+            <!-- Add your favorites, e.g., Android Studio, Figma -->
+        </ul>
     </section>
 
-    <!-- Future Plans -->
-    <section>
-      <h2>What's Next?</h2>
-      <ul>
-        <li>Launch a mobile app on Play Store</li>
-        <li>Build a full-stack e-commerce platform</li>
-        <li>Contribute to open-source AI projects</li>
-        <li>Create YouTube tutorials on web dev</li>
-      </ul>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: [Project Name, e.g., GreenLight Farming App]</h3>
+            <p>A Flutter app for farmers to learn about crops, community discussions, and expert help. Built with Firebase integration.</p>
+            <img src="images/project1-screenshot.png" alt="Project 1 Screenshot"> <!-- Upload image to images/ folder -->
+            <a href="[Link to repo or demo]" class="button">Download APK</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: [Project Name, e.g., Itsuka (means one day in japenese)
+]</h3>
+            <p>A small app that shows a different anime quote using a api .</p>
+            <img src="images/project2-screenshot.png" alt="Project 2 Screenshot">
+            <a href="[Link to repo or demo]" class="button">Download APK</a>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section class="social-links">
-      <h2>Connect With Me</h2>
-      <a href="https://github.com/AshwajeetPatil" target="_blank">🐙 GitHub</a>
-      <a href="https://linkedin.com/in/ashwajeetpatil" target="_blank">💼 LinkedIn</a>
-      <a href="mailto:ashwajeet.example@gmail.com">📧 Email</a>
+    <section id="goals">
+        <h2>What I Want to Do</h2>
+        <p>I aim to contribute to open-source projects, build scalable apps for agriculture and education, and eventually work in AI-driven solutions for sustainable development. I'm excited about exploring web development further!</p>
     </section>
 
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Ashwajeet Patil. Made with ❤️ and code.</p>
-  </footer>
-
+    <footer>
+        <p>Contact me: [work.ashwajeetpatil@gmail.com] | <a href="https://github.com/ashwajeetpatil">GitHub</a> | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
