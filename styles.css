@@ -14,10 +14,12 @@ header {
     padding: 50px 20px;
 }
 
-h1, h2, h3 {
-    color: #FFFFFF; /* Sky blue headings */
+h2, h3 {
+    color: #87CEEB; /* Sky blue headings */
 }
-
+h1{
+    color:FFFFFF;
+}
 section {
     padding: 40px 20px;
     max-width: 800px;
