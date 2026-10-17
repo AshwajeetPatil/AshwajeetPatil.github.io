@@ -16,6 +16,13 @@ header {
 
 h1 {
     color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 h2, h3 {
@@ -39,19 +46,26 @@ ul {
     padding-bottom: 20px;
 }
 
-.project img {
+/* Updated Image styling from HTML to CSS */
+.project-img {
     max-width: 100%;
+    width: 300px;
     height: auto;
     margin: 10px 0;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* Updated Button Styling */
 .button {
     display: inline-block;
     background-color: #87CEEB; /* Sky blue button */
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -65,17 +79,23 @@ footer {
     color: #FFFFFF;
 }
 
-/* Tools Grid for Logos */
-.tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-    justify-items: center;
+/* NEW: Tools List as Pill Tags */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
 }
 
-.tool-logo {
-    width: 100px;
-    height: auto;
+.tools-list li {
+    background-color: #f0f8ff; /* Very light blue background */
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #87CEEB;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 /* Social Logos */
@@ -98,5 +118,8 @@ footer {
     }
     section {
         padding: 20px 10px;
+    }
+    .project-img {
+        width: 100%;
     }
 }
