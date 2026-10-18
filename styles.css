@@ -209,3 +209,21 @@ footer p {
         width: 100%;
     }
 }
+/* Project Action Buttons */
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.button-outline {
+    background-color: transparent;
+    color: #0284c7;
+    border: 1px solid #0284c7;
+}
+
+.button-outline:hover {
+    background-color: #f0f9ff;
+    color: #0369a1;
+}
