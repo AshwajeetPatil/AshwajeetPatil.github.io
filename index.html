@@ -1,81 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwajeet Patil - Portfolio</title>
+    <meta name="description" content="Ashwajeet Patil — Software & Mobile Application Developer specializing in React Native, Flutter, offline-first architecture, and clean web interfaces.">
+    <title>Ashwajeet Patil | Software & Mobile Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Sticky Glassmorphism Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">AP<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#stack">Tech Stack</a>
+                <a href="#about">About</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme">
+                    <span class="theme-icon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="container">
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Available for IT & Software Roles
+            </div>
             <h1>Ashwajeet Patil</h1>
+            <p class="hero-subtitle">
+                Software & Mobile Developer building <span class="highlight">offline-first applications</span>, intuitive mobile experiences, and clean web interfaces.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="button">Explore Shipped Apps</a>
+                <a href="https://github.com/ashwajeetpatil" target="_blank" rel="noopener noreferrer" class="button button-outline">GitHub Profile ↗</a>
+                <button id="copy-email-btn" class="button button-ghost" data-email="work.ashwajeetpatil@gmail.com">
+                    Copy Email
+                </button>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello, my name is Ashwajeet Patil. I am a fresher looking for an opportunity in IT and related industries. Below are some of the projects I have worked on personally and am continuing to develop.</p>
-
-            <h3>Education</h3>
-            <ul class="clean-list">
-                <li><strong>Master in Computer Applications</strong> (dropped out in second year)</li>
-                <li><strong>Bachelor's in Computer Applications</strong></li>
-                <li><strong>HSC</strong></li>
-                <li><strong>SSC</strong></li>
-            </ul>
-        </section>
-
-        <section id="tools">
-            <h2>Apps & Tools I Use</h2>
-            <ul class="tools-list">
-                <li>VS Code</li>
-                <li>Android Studio</li>
-                <li>Figma</li>
-                <li>DaVinci Resolve</li>
-                <li>FL Studio</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Rekordbox</li>
-            </ul>
-        </section>
-
+        <!-- Featured Projects Section -->
         <section id="projects">
-            <h2>My Projects</h2>
-
-            <div class="project-card">
-                <h3>Greenlight</h3>
-                <p>An app inspired by Discord and Reddit for farmers to form a community, learn, and get answers directly from experienced farmers and experts. <em>(Under development — preview app available on GitHub)</em></p>
+            <div class="section-header">
+                <h2>Featured Engineering Work</h2>
+                <p>Production mobile applications, offline-first architectures, and community platforms.</p>
             </div>
 
-            <div class="project-card">
-                <h3>Itsuka <span class="subtitle">(means "one day" in Japanese)</span></h3>
-                <p>A quotes-based app on anime characters and their words that shows a different anime quote every day, made using the Animechan API. The plan is to expand it to make it clips-based using a separate database.</p>
-                <img src="itsuka_screenshot.png" alt="Itsuka App Screenshot" class="project-img">
-                <div>
-                    <a href="https://github.com/ashwajeetpatil/ashwajeetpatil.github.io/releases/download/v1.2/Itsuka-v1.2.apk" class="button">Download APK (2.68 MB)</a>
+            <div class="projects-grid">
+                <!-- Project 1: Paranoid -->
+                <article class="project-card featured">
+                    <div class="project-top">
+                        <div class="project-meta">
+                            <span class="badge badge-live">v1.0.0 Release</span>
+                            <span class="project-type">Mobile App • Privacy & Utility</span>
+                        </div>
+                        <h3>Paranoid <span class="subtitle">— Offline-First Receipt & Document Vault</span></h3>
+                        <p>A privacy-first, 100% on-device mobile vault engineered for zero cloud dependency. Built for instant field capture and structured financial tracking without compromising user data.</p>
+
+                        <ul class="feature-highlights">
+                            <li><strong>Zero-Lock Blind Camera:</strong> Instant capture workflow bypassing sluggish gallery pickers.</li>
+                            <li><strong>Hardware-Backed Security:</strong> Biometric authentication with device PIN/password fallback.</li>
+                            <li><strong>Smart Math Engine:</strong> Numeric decimal input with auto-remainder bill splitting and portable JSON backup/restore.</li>
+                        </ul>
+
+                        <div class="tech-tags">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>SQLite</span>
+                            <span>Local Biometrics</span>
+                            <span>JSON Schema</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/AshwajeetPatil/Paranoid/releases/latest/download/Paranoid-v1.0.0.apk" class="button">Download APK</a>
+                        <a href="https://github.com/AshwajeetPatil/Paranoid" target="_blank" rel="noopener noreferrer" class="button button-outline">Source Code ↗</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Itsuka -->
+                <article class="project-card">
+                    <div class="project-split">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="badge badge-live">v1.2 Release</span>
+                                <span class="project-type">Android App • REST API</span>
+                            </div>
+                            <h3>Itsuka <span class="subtitle">("One Day" in Japanese)</span></h3>
+                            <p>A lightweight daily anime quote application powered by the Animechan API. Designed with a clean, distraction-free reading interface and asynchronous state handling.</p>
+                            <p class="roadmap-note"><strong>Next Milestone:</strong> Expanding into a curated video clips database with custom backend indexing.</p>
+
+                            <div class="tech-tags">
+                                <span>Android</span>
+                                <span>REST API</span>
+                                <span>JSON Parsing</span>
+                                <span>Async UI</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/ashwajeetpatil/ashwajeetpatil.github.io/releases/download/v1.2/Itsuka-v1.2.apk" class="button">Download APK (2.68 MB)</a>
+                            </div>
+                        </div>
+
+                        <div class="project-preview">
+                            <div class="phone-frame">
+                                <img src="itsuka_screenshot.png" alt="Itsuka App Screenshot" class="project-img" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Greenlight -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-meta">
+                            <span class="badge badge-wip">In Active Development</span>
+                            <span class="project-type">Cross-Platform Community Platform</span>
+                        </div>
+                        <h3>Greenlight <span class="subtitle">— Agricultural Knowledge & Community Network</span></h3>
+                        <p>A specialized discussion and resource platform inspired by Discord and Reddit, architected to connect farmers directly with domain experts and experienced cultivators for real-time crop troubleshooting.</p>
+
+                        <div class="tech-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Community Architecture</span>
+                            <span>Mobile UI/UX</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/ashwajeetpatil" target="_blank" rel="noopener noreferrer" class="button button-outline">Preview on GitHub ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bento Grid Tech Stack Section -->
+        <section id="stack">
+            <div class="section-header">
+                <h2>Technical Stack & Toolkit</h2>
+                <p>Languages, frameworks, and creative software I use to design, build, and ship products.</p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card">
+                    <h3>📱 Frameworks & Databases</h3>
+                    <p>Cross-platform mobile development, local persistence, and responsive web standards.</p>
+                    <ul class="tools-list">
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>Flutter</li>
+                        <li>SQLite</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+
+                <div class="bento-card">
+                    <h3>🛠️ Engineering & UI Design</h3>
+                    <p>Daily IDEs, version control, debugging environments, and interface prototyping.</p>
+                    <ul class="tools-list">
+                        <li>VS Code</li>
+                        <li>Android Studio</li>
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                <div class="bento-card">
+                    <h3>🎨 Creative & Media Production</h3>
+                    <p>Visual asset design, vector illustration, video post-production, and digital audio workstations.</p>
+                    <ul class="tools-list">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>DaVinci Resolve</li>
+                        <li>FL Studio</li>
+                        <li>Rekordbox</li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3>Paranoid <span class="subtitle">(Offline-First Receipt & Document Vault)</span></h3>
-                <p>A privacy-first, 100% on-device mobile vault built with React Native (Expo) and SQLite. Features zero-lock blind camera quick capture, biometric authentication with device PIN/password fallback, numeric decimal input, auto-remainder bill splitting, and portable offline JSON backup.</p>
-                <div class="project-actions">
-                    <a href="https://github.com/AshwajeetPatil/Paranoid/releases/latest/download/Paranoid-v1.0.0.apk" class="button">Download APK</a>
-                    <a href="https://github.com/AshwajeetPatil/Paranoid" target="_blank" rel="noopener noreferrer" class="button button-outline">View on GitHub</a>
+        <!-- About & Education Section -->
+        <section id="about">
+            <div class="section-header">
+                <h2>About & Education</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Engineering Mindset</h3>
+                    <p>I am a software developer focused on building practical, fast, and privacy-respecting applications. Instead of leaving ideas as mockups, I enjoy taking products through the entire lifecycle—from wireframing in Figma and structuring local SQLite schemas to compiling production APKs.</p>
+                    <p>Currently seeking entry-level Software Developer, Mobile Application Developer, or IT engineering roles where I can contribute immediately and grow alongside an experienced technical team.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Academic Background</h3>
+                    <ul class="timeline-list">
+                        <li>
+                            <span class="degree-title">Bachelor of Computer Applications (BCA)</span>
+                            <span class="degree-sub">Sardar Patel Mahavidyalaya, Chandrapur (Gondwana University)</span>
+                        </li>
+                        <li>
+                            <span class="degree-title">Postgraduate Coursework — Master of Computer Applications (MCA)</span>
+                            <span class="degree-sub">Completed first-year curriculum before transitioning to hands-on software development</span>
+                        </li>
+                        <li>
+                            <span class="degree-title">Higher Secondary (HSC) & Secondary School (SSC)</span>
+                            <span class="degree-sub">Maharashtra State Board</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>Email: <a href="mailto:work.ashwajeetpatil@gmail.com" class="footer-link">work.ashwajeetpatil@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://github.com/ashwajeetpatil" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div class="container footer-content">
+            <div>
+                <h3>Let's Build Something Together</h3>
+                <p>Open to software engineering roles, technical internships, and collaborative projects.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:work.ashwajeetpatil@gmail.com" class="footer-link">work.ashwajeetpatil@gmail.com</a>
+                <span>•</span>
+                <a href="https://github.com/ashwajeetpatil" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
             </div>
         </div>
     </footer>
+
+    <!-- Toast Notification for Copy Email -->
+    <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+    <!-- Interactive Portfolio Script -->
+    <script>
+        // 1. Dark / Light Theme Toggle with LocalStorage Persistence
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('.theme-icon');
+        const rootElement = document.documentElement;
+
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+        rootElement.setAttribute('data-theme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = rootElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            rootElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+
+        // 2. One-Click Email Copy with Toast Feedback
+        const copyBtn = document.getElementById('copy-email-btn');
+        const toast = document.getElementById('toast');
+
+        copyBtn.addEventListener('click', () => {
+            const email = copyBtn.getAttribute('data-email');
+            navigator.clipboard.writeText(email).then(() => {
+                toast.classList.add('show');
+                copyBtn.textContent = 'Copied ✓';
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    copyBtn.textContent = 'Copy Email';
+                }, 2500);
+            });
+        });
+    </script>
 </body>
 </html>
